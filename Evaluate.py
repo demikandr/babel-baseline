@@ -38,7 +38,7 @@ def filterSample(p):
 
 
 def filterSamples(samples):
-    return [' '.join(sample.split(' ')[:100]) for sample in samples if filterSample(sample)]
+    return [' '.join(sample.split(' ')[:MAX_LENGTH - 2]) for sample in samples if filterSample(sample)]
 
 
 # In[5]:
